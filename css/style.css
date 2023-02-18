@@ -217,7 +217,7 @@ span {
 	color: #07123b;
 }
 
-.droap_menu {
+.main_menu .droap_menu {
 	position: absolute;
 	width: 270px;
 	background-color: #fff;
@@ -225,6 +225,8 @@ span {
 	left: 0;
 	opacity: 0;
 	visibility: hidden;
+	/* overflow: hidden; */
+	/* overflow-y: auto; */
 	max-height: 500px;
 	transition: all linear .3s;
 	-webkit-transition: all linear .3s;
@@ -233,6 +235,16 @@ span {
 	-o-transition: all linear .3s;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	z-index: 99;
+}
+
+.main_menu .droap_menu::-webkit-scrollbar {
+	scrollbar-width: thin !important;
+	background: #ddd;
+	width: 3px;
+}
+
+.main_menu .droap_menu::-webkit-scrollbar-thumb {
+	background: #378FFF;
 }
 
 .main_menu .navbar-nav .nav-item:hover .droap_menu {
@@ -259,6 +271,10 @@ span {
 	-moz-transition: all linear .3s;
 	-ms-transition: all linear .3s;
 	-o-transition: all linear .3s;
+}
+
+.droap_menu li:last-child a {
+	border-bottom: 0;
 }
 
 .droap_menu li a i {
@@ -294,6 +310,7 @@ span {
 	-ms-transition: all linear .3s;
 	-o-transition: all linear .3s;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	z-index: 2;
 }
 
 .sub_menu li {
@@ -2410,9 +2427,10 @@ BREADCRUMB PART END
 }
 
 .member_price h5 {
-	font-size: 30px;
-	font-weight: 700;
-	color: #07123b;
+	font-size: 30px !important;
+	font-weight: 700 !important;
+	color: #07123b !important;
+	background: #fff !important;
 	font-family: 'Poppins', sans-serif;
 	position: relative;
 	transition: all linear .3s;
@@ -4071,3 +4089,262 @@ BREADCRUMB PART END
 /*********************
    DASHBOARD END
 **********************/
+
+/*======================
+    CHECKOUT  START
+========================*/
+.wsus__checkout {
+	margin-top: 100px;
+}
+
+.wsus__pay_method {
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 8px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.wsus__checkout h5 {
+	background: #378FFF;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	margin: 0;
+	padding: 15px 0px;
+}
+
+.wsus__pay_method #v-pills-tab {
+	width: 100%;
+}
+
+.wsus__pay_method .nav button:hover,
+.wsus__pay_method .nav button.active {
+	background: #378fff1f;
+	color: #378FFF;
+	border-color: #fff;
+}
+
+.wsus__pay_method .nav button {
+	width: 100%;
+	color: #07123b;
+	background: #fff;
+	text-transform: capitalize;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid #378fff21;
+	border-radius: 0;
+	font-weight: 600;
+	padding: 20px 0px;
+	text-align: center;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	-moz-transition: all linear .3s;
+	-ms-transition: all linear .3s;
+	-o-transition: all linear .3s;
+}
+
+.wsus__pay_method .nav button:last-child {
+	border-bottom: 0;
+}
+
+.wsus__pay_details .tab-content>.active {
+	display: block;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 8px;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 25px;
+}
+
+.wsus__pay_details h5 {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.wsus__pay_card label {
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.wsus__pay_card input {
+	margin-bottom: 25px;
+	width: 100%;
+	padding: 13px 20px;
+	background: none;
+	border: 1px solid #378fff21;
+	border-radius: 3px;
+	color: #0A547A;
+	font-size: 15px;
+	resize: none;
+}
+
+.wsus__package_details {
+	display: block;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 8px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.wsus__package_details .member_price {
+	margin: 0 !important;
+}
+
+
+.wsus__pay_card button {
+	border: none;
+	margin: 0px !important;
+}
+
+.wsus__pay_details .tab-pane .read_btn {
+	margin-top: 20px;
+}
+
+.wsus__package_details .member_price h4 {
+	background: #378FFF;
+	color: #fff;
+}
+
+.wsus__package_details .member_price ul li:last-child {
+	margin: 0;
+}
+
+/*======================
+    CHECKOUT  END
+========================*/
+
+/* =================================
+    TERMS AND CONDITION START
+================================= */
+.wsus__terms_condition {
+	margin-top: 70px;
+}
+
+.wsus__terms_condition_text P {
+	margin-top: 20px;
+}
+
+.wsus__terms_condition_text h1,
+.wsus__terms_condition_text h2,
+.wsus__terms_condition_text h3,
+.wsus__terms_condition_text h4,
+.wsus__terms_condition_text h5,
+.wsus__terms_condition_text h6 {
+	text-transform: capitalize;
+	font-weight: 700;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.wsus__terms_condition_text h1 {
+	font-size: 40px;
+}
+
+.wsus__terms_condition_text h2 {
+	font-size: 35px;
+}
+
+.wsus__terms_condition_text h3 {
+	font-size: 30px;
+}
+
+.wsus__terms_condition_text h4 {
+	font-size: 25px;
+}
+
+.wsus__terms_condition_text h5 {
+	font-size: 20px;
+}
+
+.wsus__terms_condition_text ul,
+.wsus__terms_condition_text ol {
+	margin-bottom: 20px;
+}
+
+.wsus__terms_condition_text ul li,
+.wsus__terms_condition_text ol li {
+	color: var(--paraColor);
+	margin-top: 15px;
+	padding-left: 25px;
+	position: relative;
+}
+
+.wsus__terms_condition_text ul li::after,
+.wsus__terms_condition_text ol li::after {
+	position: absolute;
+	content: "";
+	width: 17px;
+	height: 17px;
+	border: 2px solid #378FFF;
+	left: 0;
+	top: 3px;
+}
+
+.wsus__terms_condition_text ul li::before,
+.wsus__terms_condition_text ol li::before {
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 5px;
+	background: #378FFF;
+	left: 6px;
+	top: 9px;
+}
+
+.wsus__terms_condition_text a {
+	position: relative;
+	background: #378FFF;
+	margin-top: 20px;
+}
+
+/* =============================
+    TERMS AND CONDITION END
+============================== */
+
+/*============================
+    404 page START
+============================*/
+.wsus__404 {
+	margin-top: 95px;
+}
+
+.wsus__404_text {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.wsus__404_text .img {
+	height: 380px;
+	overflow: hidden;
+}
+
+.wsus__404_text h2 {
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.wsus__404_text p {
+	margin: 10px 0px 20px 0px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.wsus__404_text a {
+	background: #378FFF;
+}
+
+/*============================
+    404 page END
+============================*/
